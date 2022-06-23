@@ -1,0 +1,111 @@
+body {
+    background-image: url(../imagenes/fondoD.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: none;
+    }
+.portada {
+    background-image: url(../imagenes/fondoD1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: none;
+    }
+.mb-1 {
+    border: none ; padding: 20px;border-radius: 15px; text-align-last:left; line-height:23px;}
+.row {
+    border-color: #5b3b7c;}
+.btn-primary {
+    background-color:#5b3b7c; border: none; 
+    color:rgb(255, 254, 254);}
+label{
+    display:inline-block; width: 200px;}
+h1{ 
+    text-align: center; color:#5b3b7c; font-weight:bolder;} 
+div{ 
+    text-align: center;}
+span{
+    display: flex; justify-content: center;}
+
+.botonf .btn {
+    display: inline-block;
+    margin: 6px;
+    font-size: inherit;
+    line-height: 1.42;
+    padding: 0.7em 1.4em;
+    font-weight: bold;
+    color: #8864b4;
+    border-width: 3px;
+    border-style: solid;
+    background: rgb(213, 178, 234);
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Booster Next FY", "Avenir Next", Avenir, sans-serif;
+    user-select: none;
+    vertical-align: bottom;
+    position: relative;
+    transform: translate(0.5em -0.4em);
+    transition: transform 0.2s;
+    color: #8864b4;
+            border-color: #8864b4;
+            border-radius: 8px;
+    }
+.botonf .volver {
+    display: inline-block;
+    margin: 6px;
+    font-size: inherit;
+    line-height: 1.42;
+    padding: 0.7em 1.4em;
+        font-weight: bold;
+        color: #8864b4;
+        border-width: 3px;
+        border-style: solid;
+        background: rgb(255, 228, 221);
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: "Booster Next FY", "Avenir Next", Avenir, sans-serif;
+        user-select: none;
+        vertical-align: bottom;
+        position: relative;
+        transform: translate(0.5em -0.4em);
+        transition: transform 0.2s;
+        color: #8864b4;
+        border-color: #8864b4;
+        border-radius: 8px;
+    }
+.chicas3{
+    position: relative; left: -250px;
+    width: 20%;
+    z-index:-1;
+    margin-bottom: -50px;
+    margin-top: -180px;
+    }
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------- 
+CSS DE TABLAS
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+table {
+    border: 1px solid #5b3b7c;
+    border-radius: 15px;
+    text-align: left;
+    line-height: 23px;
+    padding: 15px;
+    padding-left: auto;
+    padding-right: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+h2{font-family: 'BIZ UDPGothic', sans-serif; text-align: center;font-weight: bolder; color: #8864b4 ; padding-top: 20px;}
+th {
+    background-color: #5b3b7c;
+    color: rgb(2, 2, 2);
+    border-style: solid;
+}
+table tr:nth-child(even) {    background-color: #f4d2ff;}
+table tr:nth-child(odd) {background-color: #f1c1f0;}
+.buscador{margin-left:50px; margin-right: 50px;}    
