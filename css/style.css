@@ -7,8 +7,36 @@ html{
 *::after{
     box-sizing: inherit;
 }
+:root{
+    --cyber-grape: #5b3b7cff;
+    --middle-blue-purple: #8864b4ff;
+    --wisteria: #d5b2eaff;
+    --pale-purple-pantone: #f2dfeaff;
+    --ivory: #f9f9edff;
+    --black-chocolate: #211103ff;
+    --black: #000000ff;    
+}
 body{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;    
 }
 
+.container {
+    display: block;
+    background-color: var(--pale-purple-pantone);
+    height: 100%;
+}
+
+.login {
+    background-color: var(--ivory);
+    width: min(87.5%, 22rem);
+    margin: 9.5rem auto;
+    border-radius: 15px;
+    padding: 1.5rem 1.6rem 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.login__titulo {
+    display: block;
+}
