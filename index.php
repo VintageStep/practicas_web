@@ -12,25 +12,22 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Login</title>
 </head>
-
 <body>
         <main class="container">
                 <form name="formulario" method="POST" action="/inicio_sesion_practica.php" class="login">
+        <main class="container">
+                <form name="formulario" method="POST" action="/inicio_sesion_practica.php" class="login">
                         <h1 class="login__titulo">Inicio de sesión</h1>
-
+                                        <label for="clave" class="clave__etiqueta">Contraseña</label>
                                 <div class="usuario__container">
                                         <label for="usuario" class="usuario__etiqueta">Usuario</label>
                                         <input type="text" name="usuario" class="login__usuario" id="usuario" placeholder="Ingrese email" required>
-                                </div>
+                                        <input type="submit" id="boton_ingreso" name="boton_ingreso" value="Ingresar" class="login__boton">
                                 <div class="clave__container">
                                         <label for="clave" class="clave__etiqueta">Contraseña</label>
                                         <input type="password" class="login__clave" name="clave" id="clave" placeholder="Ingrese contraseña" required><br>
                                         <a href="#" class="login__enlace">¿Olvidó contraseña?</a>
-                                </div>
+
                                         <input type="submit" id="boton_ingreso" name="boton_ingreso" value="Ingresar" class="login__boton">
                         <p class="formulario__error"><?php $mensaje ?></p>
-                </form>
         </main>
-</body>
-
-</html>
