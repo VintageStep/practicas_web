@@ -31,7 +31,7 @@ include 'validacion\comprobar_mensaje.php';
                                         <div class="mb-3">
                                                 <label for="clave" class="form-label">Contraseña</label>
                                                 <input type="password" class="form-control" name="clave" id="clave" placeholder="Ingrese contraseña" required><br>
-                                                <a href="pregunta_seguridad.php">¿Olvidó contraseña?</a>
+                                                <a href="/validacion/pregunta_seguridad.php">¿Olvidó contraseña?</a>
                                         </div>
 
                                         <span class="botonf">
