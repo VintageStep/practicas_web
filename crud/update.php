@@ -16,7 +16,7 @@ $usuario = $sentencia->fetch(PDO::FETCH_OBJ);
 	<title>Igualdad</title>
 </head>
 <body>
-<div style="text-aling=center">
+<div style="text-aling:center">
 	<form method="POST" action="updateSave.php">
 		<!-- Ocultamos el ID para que el usuario no pueda cambiarlo (en teoría) -->
 		<h1>Actualizacion de usuarios:</h1>
