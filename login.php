@@ -25,13 +25,13 @@ include 'validacion\comprobar_mensaje.php';
                                         <h1 class="titulo" style=" font-family: 'BIZ UDPGothic', sans-serif; text-align: center; font-weight: bolder; color: #8864b4;">Inicio sesión</h1>
 
                                         <div class="mb-3">
-                                                <label for="email" class="form-label">Email</label>
+                                                <label for="usuario" class="form-label">Usuario</label>
                                                 <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Ingrese email" required>
                                         </div>
                                         <div class="mb-3">
                                                 <label for="clave" class="form-label">Contraseña</label>
                                                 <input type="password" class="form-control" name="clave" id="clave" placeholder="Ingrese contraseña" required><br>
-                                                <a href="pregunta_seguridad.php">¿Olvidó contraseña?</a>
+                                                <a href="/validacion/pregunta_seguridad.php">¿Olvidó contraseña?</a>
                                         </div>
 
                                         <span class="botonf">
