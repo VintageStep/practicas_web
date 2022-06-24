@@ -1,0 +1,14 @@
+html{
+    font-family: Lato, sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
