@@ -28,3 +28,5 @@
                                         <input type="submit" id="boton_ingreso" name="boton_ingreso" value="Ingresar" class="login__boton">
                         <p class="formulario__error"><?php $mensaje ?></p>
         </main>
+</body>
+</html>
