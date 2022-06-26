@@ -13,30 +13,62 @@ html{
     --wisteria: #d5b2eaff;
     --pale-purple-pantone: #f2dfeaff;
     --ivory: #f9f9edff;
+    --seashell: hsla(9, 48%, 95%, 1);    
     --black-chocolate: #211103ff;
-    --black: #000000ff;    
+    --black: #000000ff;
+    /* https://webgradients.com/ */
+    --bk-gradient: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    --bk-wgradient: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); 
+
 }
 body{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;    
+    padding: 0;
+    background-image: var(--bk-gradient);        
 }
 
 .container {
-    display: block;
-    background-color: var(--pale-purple-pantone);
+    display: flex;
     height: 100%;
 }
 
+.login__main {
+    align-items: center;
+    min-height: 100vh;
+}
+
 .login {
-    background-color: var(--ivory);
-    width: min(87.5%, 22rem);
-    margin: 9.5rem auto;
-    border-radius: 15px;
-    padding: 1.5rem 1.6rem 2rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+    background-color: var(--seashell);
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);
+    text-align: center;
 }
 
 .login__titulo {
     display: block;
+}
+
+.login__contenedor {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.login__boton {
+    background-color: var(--middle-blue-purple);
+    color: var(--black-chocolate);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.login__boton:hover{
+    cursor: pointer;
 }

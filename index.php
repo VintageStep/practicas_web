@@ -13,20 +13,22 @@
         <title>Login</title>
 </head>
 <body>
-        <main class="container">
+        <main class="login__main container">
                 <form name="formulario" method="POST" action="/inicio_sesion_practica.php" class="login">
                         <h1 class="login__titulo">Inicio de sesión</h1>
-                                        <label for="clave" class="clave__etiqueta">Contraseña</label>
-                                <div class="usuario__container">
+                        <div class="login__contenedor">
+                                <div class="login__grupo">
                                         <label for="usuario" class="usuario__etiqueta">Usuario</label>
-                                        <input type="text" name="usuario" class="login__usuario" id="usuario" placeholder="Ingrese email" required>
-                                        <input type="submit" id="boton_ingreso" name="boton_ingreso" value="Ingresar" class="login__boton">
-                                <div class="clave__container">
+                                        <input type="text" name="usuario" class="login__usuario" id="usuario" placeholder="Email:" required>
+                                </div>
+                                <div class="login__grupo">
                                         <label for="clave" class="clave__etiqueta">Contraseña</label>
-                                        <input type="password" class="login__clave" name="clave" id="clave" placeholder="Ingrese contraseña" required><br>
+                                        <input type="password" class="login__clave" name="clave" id="clave" placeholder="Contraseña:" required>
+                                </div>
                                         <a href="#" class="login__enlace">¿Olvidó contraseña?</a>
                                         <input type="submit" id="boton_ingreso" name="boton_ingreso" value="Ingresar" class="login__boton">
-                        <p class="formulario__error"><?php $mensaje ?></p>
+                                <p class="formulario__error"><?php $mensaje ?></p>
+                        </div>
         </main>
 </body>
 </html>
