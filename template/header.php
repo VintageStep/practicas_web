@@ -43,7 +43,7 @@
                         <div class="dropdown-menu">
                             <a href="../crud/read.php" class="dropdown-item">Consultas Usuarios</a>
                             <a href="../crudEmp/read.php" class="dropdown-item">Consultas Empresas</a>
-                            </div>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Formularios</a>

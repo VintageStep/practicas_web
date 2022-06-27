@@ -15,6 +15,7 @@ html{
     --seashell: #f8eeec;    
     --black-chocolate: #211103ff;
     --black: #000000ff;
+    --dropdown-border-color: rgba(0,0,0,0.175);
     /* https://webgradients.com/ */
     --bk-gradient: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     --bk-wgradient: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); 
@@ -38,6 +39,7 @@ FORMULARIO LOGIN
     min-height: 100vh;    
     display: flex;
     height: 100%;
+    z-index: -1;
 }
 
 .login {
@@ -115,4 +117,91 @@ FORMULARIO LOGIN
 /* Pediente hacer display cuando se genere un error*/
 .login__error{
     display: none;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------- 
+BARRA DE NAVEGACION
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+.navbar {
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.navbar__container{
+    width: 100%;
+    display: flex;
+}
+.navbar__logo__link{
+    display: inline-block;
+}
+.navbar__buttons{
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    margin-left: 10%;
+}
+.navbar__list{
+    list-style: none;
+
+}
+.navbar__link{
+    text-decoration: none;
+    color:var(--seashell);
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;        
+}
+.navbar__logo{
+    display: block;
+    margin: 0;
+    width: 250px;
+
+}
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .navbar__link {
+    background-color: var(--cyber-grape);
+    cursor: pointer;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------- 
+MENU DROPDOWN
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--seashell);
+    border-color: var(--dropdown-border-color);
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color: var(--seashell);
+    background-color: var(--cyber-grape);
+    border-radius: 10px;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content {
+    display: block;
 }
