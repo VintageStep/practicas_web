@@ -12,8 +12,7 @@ html{
     --middle-blue-purple: #8864b4ff;
     --wisteria: #d5b2eaff;
     --pale-purple-pantone: #f2dfeaff;
-    --ivory: #f9f9edff;
-    --seashell: hsla(9, 48%, 95%, 1);    
+    --seashell: #f8eeec;    
     --black-chocolate: #211103ff;
     --black: #000000ff;
     /* https://webgradients.com/ */
@@ -25,17 +24,20 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Radio Canada', sans-serif;
     background-image: var(--bk-gradient);        
 }
 
-.container {
-    display: flex;
-    height: 100%;
-}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------- 
+FORMULARIO LOGIN
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .login__main {
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh;    
+    display: flex;
+    height: 100%;
 }
 
 .login {
@@ -43,32 +45,74 @@ body{
     width: 90%;
     max-width: 400px;
     margin: 0 auto;
-    padding: 4.5em 3em;
+    padding: 2em 3em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);
     text-align: center;
 }
 
 .login__titulo {
-    display: block;
+    font-size: 2rem;
+    margin-bottom: .5em;
+    color: var(--black-chocolate);
 }
 
 .login__contenedor {
-    margin-top: 3em;
     display: grid;
-    gap: 2.5em;
+    margin-top: 2em;
+    gap: 1.5em;
 }
-
+.login__grupo {
+    position: relative;
+    color: var(--black-chocolate);
+}
+.login__input {
+    width: 100%;
+    background: none;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--black);
+    padding: .6em .3em;
+    border-style: none none solid none;
+    border-width: .5px;
+    border-color: var(--black-chocolate);
+    outline: none;
+}
+.login__input:not(:placeholder-shown) + .login__label,
+.login__input:focus + .login__label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: top left;
+    color: var(--black-chocolate);
+}
+.login__label {
+    color: var(--black-chocolate);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+.login__parrafo{
+    padding: 0 auto;
+    margin: 0 auto;
+}
 .login__boton {
     background-color: var(--middle-blue-purple);
-    color: var(--black-chocolate);
+    color: var(--seashell);
     font-family: inherit;
     font-size: 1rem;
     padding: .8em 0;
     border: none;
     border-radius: .5em;
 }
-
 .login__boton:hover{
     cursor: pointer;
+}
+.login__enlace{
+    color: var(--black-chocolate);
+}
+/* Pediente hacer display cuando se genere un error*/
+.login__error{
+    display: none;
 }
