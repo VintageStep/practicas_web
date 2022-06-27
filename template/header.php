@@ -45,10 +45,22 @@
                             <a href="../crudEmp/read.php" class="dropdown-item">Consultas Empresas</a>
                             </div>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Formularios</a>
+                        <div class="dropdown-menu">
+                            
+                            <a href="../Formularios/Formulario_alta_admin.php" class="dropdown-item">Nueva Empresa</a>
+                            <a href="../Formularios/Formulario_alta_usuario.php" class="dropdown-item">Configurar Empresa</a>
+                            <a href="../Formularios/Formulario_modificacion.php" class="dropdown-item">Modificacion</a>
+                            </div>
+                    </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="../calendar/Calendario.php">Calendario</a>
+
                         </li>
+                       
+    </div>
                        
                     </ul>
 
