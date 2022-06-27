@@ -1,6 +1,6 @@
 <?php
-include 'template\header.php';
-include 'validacion\comprobar_mensaje.php';
+//include 'template\header.php';
+//include 'validacion\comprobar_mensaje.php';
 ?>
 
 <!doctype html>
@@ -9,42 +9,32 @@ include 'validacion\comprobar_mensaje.php';
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="css/css-final.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;700&display=swap" rel="stylesheet">        
         <title>Login</title>
 </head>
-
 <body>
-        <div class="container">
-                <div class="row">
-                        <div class="col-4"></div>
-                        <div class="col-4">
-                                <form name="formulario" method="post" action="/inicio_sesion_practica.php">
-                                        <br><br><br><br><br>
-                                        <h1 class="titulo" style=" font-family: 'BIZ UDPGothic', sans-serif; text-align: center; font-weight: bolder; color: #8864b4;">Inicio sesión</h1>
-
-                                        <div class="mb-3">
-                                                <label for="usuario" class="form-label">Usuario</label>
-                                                <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Ingrese email" required>
-                                        </div>
-                                        <div class="mb-3">
-                                                <label for="clave" class="form-label">Contraseña</label>
-                                                <input type="password" class="form-control" name="clave" id="clave" placeholder="Ingrese contraseña" required><br>
-                                                <a href=".\validadicion\pregunta_seguridad.php">¿Olvidó contraseña?</a>
-                                        </div>
-
-                                        <span class="botonf">
-                                                <div>
-                                                        <input type="submit" id="boton_ingreso" name="boton_ingreso" value="Ingresar" class="btn btn-primary">
-                                                </div>
-                                        </span>
-                                        <p class="error"><?php $mensaje ?></p>
-                                </form>
-                                <div class="col-4"></div>
+        <main class="login__main container">
+                <form name="formulario" method="POST" action="/inicio_sesion_practica.php" class="login">
+                        <h1 class="login__titulo">Inicio de sesión</h1>
+                        <div class="login__contenedor">
+                                <div class="login__grupo">
+                                        <input type="text" name="usuario" class="login__input" id="usuario" placeholder=" " required>
+                                        <label for="usuario" class="login__label">Usuario</label>
+                                </div>
+                                <div class="login__grupo">
+                                        <input type="password" class="login__input" name="clave" id="clave" placeholder=" " required>
+                                        <label for="clave" class="login__label">Contraseña</label>
+                                </div>
+                                        <input type="submit" id="boton_ingreso" name="boton_ingreso" value="Ingresar" class="login__boton">
+                                <p class="login__parrafo">
+                                        <a href="#" class="login__enlace">¿Olvidó su contraseña?</a>
+                                        <a href="#" class="login__enlace">Sobre nosotros</a>
+                                </p>        
+                                <p class="login__error"><?php $mensaje ?></p>
                         </div>
-                </div>
-        </div>
+        </main>
 </body>
-
 </html>
