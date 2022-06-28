@@ -15,7 +15,7 @@ include '..\template\header.php';
 	<link rel="stylesheet" type="text/css" href="\css\css-final.css">
   </head>
   <body>
-  <div style="text-align=center">
+  <div style="text-align:center">
 	<form method="POST" action="createSave.php">
 	<h1> Registro de usuarios </h1>
 	<label>Nombre:</label>
