@@ -1,10 +1,16 @@
 <!doctype html>
 <html lang="es">
-
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;700&display=swap" rel="stylesheet">        
+    <title><?php $titulo ?></title>
 </head>
-<body>
-    <section class="navbar">
+<body class="body">
+    <header class="navbar">
         <nav class="navbar__container">   
             <a  href="..\index.php" class="navbar__logo__link">
                 <img src="\imagenes\logo.png" alt="Logo de la pagina" class="navbar__logo">
@@ -26,6 +32,4 @@
                 <li class="navbar__list"><a class="navbar__link" href="../calendar/Calendario.php">Calendario</a></li>
             </ul>
         </nav>
-    </section>
-</body>
-</html>
+    </header>
