@@ -119,22 +119,16 @@ FORMULARIO LOGIN
 /*----------------------------------------------------------------------------------------------------------------------------------------------- 
 BARRA DE NAVEGACION
 -----------------------------------------------------------------------------------------------------------------------------------------------*/
-.navbar__link {
-    text-decoration: none;
-    color: var(--black-chocolate);
-}
 
-.navbar__list:hover .navbar__link:not(.dropdown .navbar__list .navbar__link){
-    color: var(--seashell);
-}
-.dropdown .navbar__list:hover .navbar__link {
-    color: var(--seashell);
-}
+/* Contenedor del header */
 
 .navbar__container{
     width: 100%;
     display: flex;
 }
+
+/* Estilo del logo de la app */
+
 .navbar__logo{
     display: block;
     margin: 0;
@@ -143,6 +137,9 @@ BARRA DE NAVEGACION
 .navbar__logo__link{
     display: inline-block;
 }
+
+/* Barra de botones */
+
 .navbar__buttons {
     list-style: none;
     margin: 1em 0;
@@ -151,6 +148,24 @@ BARRA DE NAVEGACION
     background-image: var(--bk-wgradient);
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);    
 }
+
+/* Estilos de los enlaces de todos los botonoes */
+
+.navbar__link {
+    text-decoration: none;
+    color: var(--black-chocolate);
+}
+.navbar__list:focus-within .navbar__link {
+    outline: none;
+}
+.navbar__list:hover .navbar__link:not(.dropdown .navbar__list .navbar__link){
+    color: var(--seashell);
+}
+.dropdown .navbar__list:hover .navbar__link {
+    color: var(--seashell);
+}
+
+/* Estilos de los botones */
 
 .navbar__list {
     background:transparent;
@@ -167,10 +182,12 @@ BARRA DE NAVEGACION
     border-radius:0.5rem;
     cursor: pointer;
 }
-
-.navbar__list:focus-within .navbar__link {
-    outline: none;
+.dropdown .navbar__list {
+    clear: both;
+    width: 100%;
 }
+
+/* Estilos del dropdown y reglas necesarias para que aparezca */
 
 .dropdown {
     background-image: var(--bk-wgradient);
@@ -186,7 +203,6 @@ BARRA DE NAVEGACION
     list-style: none;
     padding-left: 0;    
 }
-
 .navbar__list:hover>.dropdown,
 .navbar__list:focus-within>.dropdown,
 .navbar__list .dropdown:hover,
@@ -196,7 +212,3 @@ BARRA DE NAVEGACION
     display: block;
 }
 
-.dropdown .navbar__list {
-    clear: both;
-    width: 100%;
-}
