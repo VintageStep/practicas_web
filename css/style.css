@@ -1,6 +1,4 @@
-html{
-    font-family: Lato, sans-serif;
-}
+/* Variables globales */
 
 *,
 *::before,
@@ -15,10 +13,10 @@ html{
     --seashell: #f8eeec;    
     --black-chocolate: #211103ff;
     --black: #000000ff;
+    --dropdown-border-color: rgba(0,0,0,0.175);
     /* https://webgradients.com/ */
     --bk-gradient: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    --bk-wgradient: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); 
-
+    --bk-wgradient: linear-gradient(90deg, #fdfbfb 0%, #ebedee 100%);
 }
 body{
     box-sizing: border-box;
@@ -38,6 +36,7 @@ FORMULARIO LOGIN
     min-height: 100vh;    
     display: flex;
     height: 100%;
+    z-index: -1;
 }
 
 .login {
@@ -116,3 +115,100 @@ FORMULARIO LOGIN
 .login__error{
     display: none;
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------- 
+BARRA DE NAVEGACION
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Contenedor del header */
+
+.navbar__container{
+    width: 100%;
+    display: flex;
+}
+
+/* Estilo del logo de la app */
+
+.navbar__logo{
+    display: block;
+    margin: 0;
+    width: 250px;
+}
+.navbar__logo__link{
+    display: inline-block;
+}
+
+/* Barra de botones */
+
+.navbar__buttons {
+    list-style: none;
+    margin: 1em 0;
+    padding-left: 0;
+    border-radius:0.5rem;
+    background-image: var(--bk-wgradient);
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);    
+}
+
+/* Estilos de los enlaces de todos los botonoes */
+
+.navbar__link {
+    text-decoration: none;
+    color: var(--black-chocolate);
+}
+.navbar__list:focus-within .navbar__link {
+    outline: none;
+}
+.navbar__list:hover .navbar__link:not(.dropdown .navbar__list .navbar__link){
+    color: var(--seashell);
+}
+.dropdown .navbar__list:hover .navbar__link {
+    color: var(--seashell);
+}
+
+/* Estilos de los botones */
+
+.navbar__list {
+    background:transparent;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.navbar__list:hover,
+.navbar__list:focus-within {    
+    background-color: var(--middle-blue-purple);
+    border-radius:0.5rem;
+    cursor: pointer;
+}
+.dropdown .navbar__list {
+    clear: both;
+    width: 100%;
+}
+
+/* Estilos del dropdown y reglas necesarias para que aparezca */
+
+.dropdown {
+    background-image: var(--bk-wgradient);
+    border-radius:0.5rem;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    list-style: none;
+    padding-left: 0;    
+}
+.navbar__list:hover>.dropdown,
+.navbar__list:focus-within>.dropdown,
+.navbar__list .dropdown:hover,
+.navbar__list .dropdown:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
