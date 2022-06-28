@@ -12,6 +12,9 @@ include '..\template\header.php';
 
 <body>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> thomas
     <main class="formulario__main">
         <section class="formulario__container">
             <form class="formulario" name="formulario_a" method="POST" action="#">
@@ -34,6 +37,7 @@ include '..\template\header.php';
                 </div>
         </section>
     </main>
+<<<<<<< HEAD
 =======
 <div class="container">
 <form name="formulario_aad" method="POST" action="">
@@ -54,5 +58,7 @@ include '..\template\header.php';
 </div>
 </div>
 >>>>>>> miguel
+=======
+>>>>>>> thomas
 </body>
 </html>
