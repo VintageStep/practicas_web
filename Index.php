@@ -1,6 +1,7 @@
 <?php
 include 'template\header.php';
 include 'validacion\comprobar_mensaje.php';
+
 ?>
 
 <!doctype html>

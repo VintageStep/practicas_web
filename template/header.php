@@ -51,7 +51,18 @@
                             
                             <a href="../Formularios/Formulario_alta_admin.php" class="dropdown-item">Nueva Empresa</a>
                             <a href="../Formularios/Formulario_alta_usuario.php" class="dropdown-item">Configurar Empresa</a>
-                            <a href="../Formularios/Formulario_modificacion.php" class="dropdown-item">Modificacion</a>
+                            <a href="../Formularios/Formulario_modificacion.php" class="dropdown-item">Modificacion Empresa</a>
+                            <a href="../Formularios/Formulariosusuarios/Altausuarios.php" class="dropdown-item">Alta Usuarios</a>
+                            <a href="../Formularios/Formulariosusuarios/Modificarusuarios.php" class="dropdown-item">Modificar Usuarios</a>
+                            <a href="../Formularios/Formulariosusuarios/Bajausuarios.php" class="dropdown-item">Baja Usuarios</a>
+                            <a href="../Formularios/RangoSalarial/Altasalario.php" class="dropdown-item">Alta Salario</a>
+                            <a href="../Formularios/RangoSalarial/Modificacionsalario.php" class="dropdown-item">Modificar Salario</a>
+                            <a href="../Formularios/RangoSalarial/Bajasalario.php" class="dropdown-item">Baja Salario</a>
+                            <a href="../Formularios/Puestos/AltaPuestos.php" class="dropdown-item">Alta puesto</a>
+                            <a href="../Formularios/Puestos/AltaPuestos.php" class="dropdown-item">Modificar puesto</a>
+                            <a href="../Formularios/Puestos/AltaPuestos.php" class="dropdown-item">Baja puesto</a>
+                            <a href="../Formularios/Relaciones/Alta.php" class="dropdown-item">Alta Relacion </a>
+                            <a href="../Formularios/Relaciones/Baja.php" class="dropdown-item">Baja Relacion</a>
                             </div>
                     </li>
 
