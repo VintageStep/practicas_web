@@ -35,6 +35,7 @@ include 'template\header.php';
                                 </p>        
                                 <p class="login__error"><?php $mensaje ?></p>
                         </div>
+                </form>        
         </main>
 </body>
 </html>
