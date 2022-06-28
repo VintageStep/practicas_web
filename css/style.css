@@ -1,3 +1,5 @@
+/* Variables globales */
+
 *,
 *::before,
 *::after{
@@ -113,95 +115,6 @@ FORMULARIO LOGIN
 .login__error{
     display: none;
 }
-/*----------------------------------------------------------------------------------------------------------------------------------------------- 
-BARRA DE NAVEGACION
------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* .navbar {
-    width: 90%;
-    margin: 0;
-    padding: 60px 0 0 0;
-}
-.navbar__container{
-    width: 100%;
-    display: flex;
-}
-.navbar__logo__link{
-    display: inline-block;
-}
-.navbar__buttons{
-    border-radius:0.5rem;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 1em;
-    margin-left: 10%;
-    background-image: var(--bk-wgradient);
-    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);
-}
-.navbar__list{
-    list-style: none;
-
-}
-.navbar__link{
-    padding: 1em;
-    border-radius:0.5rem;
-    text-decoration: none;
-    color:var(--black-chocolate);
-    border: none;
-    font-size: inherit;
-    font-family: inherit;
-    background-color: transparent;  
-}
-.navbar__logo{
-    display: block;
-    margin: 0;
-    width: 250px;
-}
-
-.navbar__link:hover,
-.navbar__link:focus-within {
-    color: var(--seashell);
-    background-color: var(--cyber-grape);
-    cursor: pointer;
-} */
-/*----------------------------------------------------------------------------------------------------------------------------------------------- 
-DROPDOWN CONTENT
------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* .dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-image: var(--bk-wgradient);
-    min-width: 160px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);    
-    z-index: 1;
-}
-
-
-.dropdown-item {
-    color: var(--black-chocolate);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-.dropdown-item:hover {
-    color: var(--seashell);
-    background-color: var(--cyber-grape);
-    border-radius: 10px;
-} 
-
-.dropdown:hover .dropdown-content,
-.dropdown:focus .dropdown-content {
-    display: block;
-}   */
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------- 
 BARRA DE NAVEGACION
@@ -210,9 +123,14 @@ BARRA DE NAVEGACION
     text-decoration: none;
     color: var(--black-chocolate);
 }
-.navbar__list:hover .navbar__link{
+
+.navbar__list:hover .navbar__link:not(.dropdown .navbar__list .navbar__link){
     color: var(--seashell);
 }
+.dropdown .navbar__list:hover .navbar__link {
+    color: var(--seashell);
+}
+
 .navbar__container{
     width: 100%;
     display: flex;
@@ -225,11 +143,11 @@ BARRA DE NAVEGACION
 .navbar__logo__link{
     display: inline-block;
 }
-
 .navbar__buttons {
     list-style: none;
     margin: 1em 0;
     padding-left: 0;
+    border-radius:0.5rem;
     background-image: var(--bk-wgradient);
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);    
 }
@@ -246,6 +164,7 @@ BARRA DE NAVEGACION
 .navbar__list:hover,
 .navbar__list:focus-within {    
     background-color: var(--middle-blue-purple);
+    border-radius:0.5rem;
     cursor: pointer;
 }
 
@@ -255,6 +174,7 @@ BARRA DE NAVEGACION
 
 .dropdown {
     background-image: var(--bk-wgradient);
+    border-radius:0.5rem;
     visibility: hidden;
     opacity: 0;
     min-width: 5rem;
