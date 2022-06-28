@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;700&display=swap" rel="stylesheet">        
-    <title><?php $titulo ?></title>
+    <title><?php echo $titulo ?></title>
 </head>
 <body class="body">
     <header class="navbar">

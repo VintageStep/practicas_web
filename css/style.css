@@ -215,16 +215,17 @@ BARRA DE NAVEGACION
 /*----------------------------------------------------------------------------------------------------------------------------------------------- 
 FORMULARIOS
 -----------------------------------------------------------------------------------------------------------------------------------------------*/
-/*Pendiente */
-/* .body{
+
+.body{
 
     min-height: 100vh;    
-    display: flex;
+    display: grid;
     height: 100%;
     z-index: -1;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
     "head head head aside"
+    "main main main main"
     "main main main main"
     "main main main main"
     "main main main main"
@@ -234,4 +235,10 @@ FORMULARIOS
 
 .main {
     grid-area: main;
-} */
+    margin: 0 auto;
+}
+
+.navbar {
+    grid-area: head;
+    margin: auto auto auto .5%;
+}

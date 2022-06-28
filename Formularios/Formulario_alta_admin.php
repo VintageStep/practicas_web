@@ -1,6 +1,6 @@
 <?php
+$titulo = "Formulario alta empresas";
 include '..\template\header.php';
-$titulo = "Formulario modificar empresas";
 ?>
 
     <main class="main">
