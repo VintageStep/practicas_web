@@ -212,3 +212,26 @@ BARRA DE NAVEGACION
     display: block;
 }
 
+/*----------------------------------------------------------------------------------------------------------------------------------------------- 
+FORMULARIOS
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Pendiente */
+/* .body{
+
+    min-height: 100vh;    
+    display: flex;
+    height: 100%;
+    z-index: -1;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "head head head aside"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer"
+    ;
+}
+
+.main {
+    grid-area: main;
+} */

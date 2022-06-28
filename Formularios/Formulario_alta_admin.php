@@ -1,17 +1,9 @@
 <?php
 include '..\template\header.php';
+$titulo = "Formulario modificar empresas";
 ?>
-<!doctype html>
-<html lang="es">
-<head>
-    <link rel="stylesheet" href="../css/style.css">
-    <title>
-        Formulario modificar empresas
-    </title>
-</head>
 
-<body>
-    <main class="formulario__main">
+    <main class="main">
         <section class="formulario__container">
             <form class="formulario" name="formulario_a" method="POST" action="#">
                 <h1 class="formulario__titulo">Alta Empresa</h1>
