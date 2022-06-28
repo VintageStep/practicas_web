@@ -17,7 +17,6 @@ include 'validacion\comprobar_mensaje.php';
         <div class="container">
                 <form name="formulario" method="post" action="/inicio_sesion_practica.php" class="formulario">
                         <h1 class="titulo" style=" font-family: 'BIZ UDPGothic', sans-serif; text-align: center; font-weight: bolder; color: #8864b4;">Inicio sesión</h1>
-
                                 <div class="mb-3">
                                         <label for="usuario" class="form-label">Usuario</label>
                                         <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Ingrese email" required>
