@@ -1,5 +1,5 @@
 <?php
-//include 'template\header.php';
+include 'template\header.php';
 //include 'validacion\comprobar_mensaje.php';
 ?>
 
@@ -35,6 +35,7 @@
                                 </p>        
                                 <p class="login__error"><?php $mensaje ?></p>
                         </div>
+                </form>        
         </main>
 </body>
 </html>

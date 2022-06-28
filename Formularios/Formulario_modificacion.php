@@ -1,10 +1,8 @@
 <?php
 include '..\template\header.php';
 ?>
-
 <!doctype html>
 <html lang="es">
-
 <head>
     <title>
         Formulario modificar empresas
@@ -13,7 +11,7 @@ include '..\template\header.php';
 <body>
 <div class="container">
 <form name="formulario_m" method="POST" action="">
-<div class="">
+<div class="form">
 <label for="usuario" class="form-label" id="usuario">Empresa</label>
 <input type="text" name="usuario" class="form-control" id="usuario_m"  required>
 <br>
@@ -46,22 +44,13 @@ include '..\template\header.php';
 <br>
 <label for="telefono" class="form-label" id="telefono">Telefono Empresa</label>
 <input type="text" name="telefono" class="form-control" id="Telefono"  required>
-
 <br>
-
 </div>
 <div class="Buttons">
     <input type="button" id="aceptar" name="aceptar" value="Aceptar">
     <input type="button" id="aceptar" name="aceptar" value="Resetear">
-    
-  
-    
 </div>
-
 </form>
-
 </div>
-
 </body>
-
 </html>
