@@ -13,7 +13,7 @@
 
             <li class="navbar__list">
                 <div class="dropdown">
-                    <button class="navbar__link">Consultas</button>
+                    <a href="#0" class="navbar__link">Consultas</a>
                     <div class="dropdown-content">
                         <a href="../crud/read.php" class="dropdown-item">Consultas Usuarios</a>
                         <a href="../crudEmp/read.php" class="dropdown-item">Consultas Empresas</a>
@@ -22,7 +22,7 @@
             </li>
             <li class="navbar__list">
                 <div class="dropdown">
-                    <button class="navbar__link">Formularios</button>
+                    <a href="#0" class="navbar__link">Formularios</a>
                     <div class="dropdown-content">
                     <a href="../Formularios/Formulario_alta_admin.php" class="dropdown-item">Nueva Empresa</a>
                         <a href="../Formularios/Formulario_alta_usuario.php" class="dropdown-item">Configurar Empresa</a>
