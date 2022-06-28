@@ -3,4 +3,13 @@ usuarios_clave_practica.csv
 index02.php
 .vscode
 xampp
+<<<<<<< HEAD
 crud/probar.sql
+=======
+usuarios_clave_practica.csv
+<<<<<<< HEAD
+/Formularios/.vs
+=======
+index02.php
+>>>>>>> 5cb23e2f93c0d357a268f52036f4cea84bec695a
+>>>>>>> miguel
