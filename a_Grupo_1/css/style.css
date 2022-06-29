@@ -1,0 +1,245 @@
+/* Variables globales */
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+:root{
+    --cyber-grape: #5b3b7cff;
+    --middle-blue-purple: #8864b4ff;
+    --wisteria: #d5b2eaff;
+    --pale-purple-pantone: #f2dfeaff;
+    --seashell: #f8eeec;    
+    --black-chocolate: #211103ff;
+    --black: #000000ff;
+    --dropdown-border-color: rgba(0,0,0,0.175);
+    /* https://webgradients.com/ */
+    --bk-gradient: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    --bk-wgradient: linear-gradient(90deg, #fdfbfb 0%, #ebedee 100%);
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Radio Canada', sans-serif;
+    background-image: var(--bk-gradient);        
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------- 
+FORMULARIO LOGIN
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.login__main {
+    align-items: center;
+    min-height: 100vh;    
+    display: flex;
+    height: 100%;
+    z-index: -1;
+}
+
+.login {
+    background-color: var(--seashell);
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);
+    text-align: center;
+}
+
+.login__titulo {
+    font-size: 2rem;
+    margin-bottom: .5em;
+    color: var(--black-chocolate);
+}
+
+.login__contenedor {
+    display: grid;
+    margin-top: 2em;
+    gap: 1.5em;
+}
+.login__grupo {
+    position: relative;
+    color: var(--black-chocolate);
+}
+.login__input {
+    width: 100%;
+    background: none;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--black);
+    padding: .6em .3em;
+    border-style: none none solid none;
+    border-width: .5px;
+    border-color: var(--black-chocolate);
+    outline: none;
+}
+.login__input:not(:placeholder-shown) + .login__label,
+.login__input:focus + .login__label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: top left;
+    color: var(--black-chocolate);
+}
+.login__label {
+    color: var(--black-chocolate);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+.login__parrafo{
+    padding: 0 auto;
+    margin: 0 auto;
+}
+.login__boton {
+    background-color: var(--middle-blue-purple);
+    color: var(--seashell);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+.login__boton:hover{
+    cursor: pointer;
+}
+.login__enlace{
+    color: var(--black-chocolate);
+}
+/* Pediente hacer display cuando se genere un error*/
+.login__error{
+    display: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------- 
+BARRA DE NAVEGACION
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Contenedor del header */
+
+.navbar__container{
+    width: 100%;
+    display: flex;
+}
+
+/* Estilo del logo de la app */
+
+.navbar__logo{
+    display: block;
+    margin: 0;
+    width: 250px;
+}
+.navbar__logo__link{
+    display: inline-block;
+}
+
+/* Barra de botones */
+
+.navbar__buttons {
+    list-style: none;
+    margin: 1em 0;
+    padding-left: 0;
+    border-radius:0.5rem;
+    background-image: var(--bk-wgradient);
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);    
+}
+
+/* Estilos de los enlaces de todos los botonoes */
+
+.navbar__link {
+    text-decoration: none;
+    color: var(--black-chocolate);
+}
+.navbar__list:focus-within .navbar__link {
+    outline: none;
+}
+.navbar__list:hover .navbar__link:not(.dropdown .navbar__list .navbar__link){
+    color: var(--seashell);
+}
+.dropdown .navbar__list:hover .navbar__link {
+    color: var(--seashell);
+}
+
+/* Estilos de los botones */
+
+.navbar__list {
+    background:transparent;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.navbar__list:hover,
+.navbar__list:focus-within {    
+    background-color: var(--middle-blue-purple);
+    border-radius:0.5rem;
+    cursor: pointer;
+}
+.dropdown .navbar__list {
+    clear: both;
+    width: 100%;
+}
+
+/* Estilos del dropdown y reglas necesarias para que aparezca */
+
+.dropdown {
+    background-image: var(--bk-wgradient);
+    border-radius:0.5rem;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    list-style: none;
+    padding-left: 0;
+    z-index: 2;    
+}
+.navbar__list:hover>.dropdown,
+.navbar__list:focus-within>.dropdown,
+.navbar__list .dropdown:hover,
+.navbar__list .dropdown:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------- 
+FORMULARIOS
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.body{
+
+    min-height: 100vh;    
+    display: grid;
+    height: 100%;
+    z-index: -1;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "head head head aside"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer"
+    ;
+}
+
+.main {
+    grid-area: main;
+    margin: 0 auto;
+}
+
+.navbar {
+    grid-area: head;
+    margin: auto auto auto .5%;
+}
