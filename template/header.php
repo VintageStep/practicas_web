@@ -1,3 +1,6 @@
+<?php
+include '..\conexionSQL.php';
+?>
 <!doctype html>
 <html lang="es">
 <head>
@@ -30,6 +33,7 @@
                     </ul>
                 </li>
                 <li class="navbar__list"><a class="navbar__link" href="../calendar/Calendario.php">Calendario</a></li>
+                <?php cerrar_sesion() ?>
             </ul>
         </nav>
     </header>

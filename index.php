@@ -1,5 +1,5 @@
 <?php
-include 'template\header.php';
+//include 'template\header.php';
 //include 'validacion\comprobar_mensaje.php';
 ?>
 
@@ -17,7 +17,7 @@ include 'template\header.php';
 </head>
 <body>
         <main class="login__main container">
-                <form name="formulario" method="POST" action="/inicio_sesion_practica.php" class="login">
+                <form name="formulario" method="POST" action="/inicio_sesion_practica_Modificada.php" class="login">
                         <h1 class="login__titulo">Inicio de sesión</h1>
                         <div class="login__contenedor">
                                 <div class="login__grupo">
