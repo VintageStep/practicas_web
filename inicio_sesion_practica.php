@@ -19,8 +19,8 @@ $sql = "SELECT id_usuario,id_tipo_usuario FROM usuarios WHERE email_usuario = '$
 $resultado =sqlsrv_query( $conn,$sql);
 if( $resultado === false)  
 {  
-     echo "Eres gilipollas te has confundido tolai\n";  
-     die( print_r( sqlsrv_errors(), true));  
+    echo "Eres gilipollas te has confundido tolai\n";  
+    die( print_r( sqlsrv_errors(), true));  
 }  
 while( $row = sqlsrv_fetch_array( $resultado,SQLSRV_FETCH_NUMERIC))  
 {  
