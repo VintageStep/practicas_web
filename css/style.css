@@ -217,7 +217,7 @@ BARRA DE NAVEGACION
 FORMULARIOS
 -----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.body{
+/* .body{
 
     min-height: 100vh;    
     display: grid;
@@ -242,4 +242,4 @@ FORMULARIOS
 .navbar {
     grid-area: head;
     margin: auto auto auto .5%;
-}
+} */
