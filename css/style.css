@@ -201,7 +201,8 @@ BARRA DE NAVEGACION
     left: 0;
     display: none;
     list-style: none;
-    padding-left: 0;    
+    padding-left: 0;
+    z-index: 2;    
 }
 .navbar__list:hover>.dropdown,
 .navbar__list:focus-within>.dropdown,
