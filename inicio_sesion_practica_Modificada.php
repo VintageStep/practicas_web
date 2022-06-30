@@ -25,9 +25,7 @@ while( $row = sqlsrv_fetch_array( $resultado,SQLSRV_FETCH_NUMERIC))
     $id_usuario=$row[0];
       if ($id_usuario== 0){
         cerrarconexion($conn);
-        //header('Location: http:/Perfiles/portada1.php');
         Mensaje('1');
-        //header("Location: http:/index.php");
         exit;
     }
     $id_tipo_usuario=$row[1];
