@@ -19,6 +19,7 @@ if($conn===false){
 }
     sqlsrv_close($conn);
 }
+
 function cerrar_sesion(){
 @session_start();
 session_destroy();

@@ -1,5 +1,6 @@
 <?php
 include 'conexionSQL.php';
+include 'error.php';
 session_start();
 
 // COMPROBAR VARIABLES RECIBIDAS
@@ -22,13 +23,15 @@ $result = sqlsrv_execute($resultado);
 while( $row = sqlsrv_fetch_array( $resultado,SQLSRV_FETCH_NUMERIC))  
 {  
     $id_usuario=$row[0];
-      if ($id_usuario=='0'){
+      if ($id_usuario== 0){
         cerrarconexion($conn);
-        header("Location: http:/a_Grupo_1/validacion/comprobar_mensaje.php?mensaje=1");
+        //header('Location: http:/Perfiles/portada1.php');
+        Mensaje('1');
+        //header("Location: http:/index.php");
+        exit;
     }
     $id_tipo_usuario=$row[1];
-  
-} 
+  } 
 cerrarconexion($conn);
 //CREACION DE LAS VARIABLES DE SESION
 $_SESSION["usuario"] = $id_usuario;

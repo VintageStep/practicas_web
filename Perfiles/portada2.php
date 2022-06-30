@@ -1,5 +1,7 @@
 <?php
+include"..\inicio_sesion_pratica_modificada.php";
 include 'template\header.php';
+
 ?>
 <!doctype html>
 <html lang="es">

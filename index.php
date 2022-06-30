@@ -1,6 +1,7 @@
 <?php
 //include 'template\header.php';
-//include 'validacion\comprobar_mensaje.php';
+
+
 ?>
 
 <!doctype html>
@@ -29,11 +30,12 @@
                                         <label for="clave" class="login__label">Contraseña</label>
                                 </div>
                                         <input type="submit" id="boton_ingreso" name="boton_ingreso" value="Ingresar" class="login__boton">
+                                        
                                 <p class="login__parrafo">
                                         <a href="#" class="login__enlace">¿Olvidó su contraseña?</a>
                                         <a href="#" class="login__enlace">Sobre nosotros</a>
                                 </p>        
-                                <p class="login__error"><?php $mensaje ?></p>
+                                <!--  ?> -->
                         </div>
                 </form>        
         </main>

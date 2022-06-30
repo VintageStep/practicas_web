@@ -112,9 +112,9 @@ FORMULARIO LOGIN
     color: var(--black-chocolate);
 }
 /* Pediente hacer display cuando se genere un error*/
-.login__error{
+/* .login__error{
     display: none;
-}
+} */
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------- 
 BARRA DE NAVEGACION
