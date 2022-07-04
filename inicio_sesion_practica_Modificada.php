@@ -2,10 +2,8 @@
 include 'conexionSQL.php';
 session_start();
 
-// COMPROBAR VARIABLES RECIBIDAS
-// Recibe del formulario inicio.html el usuario y la contraseña, por el método POST. 
-// Validar si llega usuario y contraseña
-if(isset($_POST['usuario']) and isset($_POST['clave'])){
+// Verificar si se llega a este script desde el formulario login
+if(isset($_POST['boton_login'])){
     $nombre_usuario = $_POST['usuario']; // Es un mail
     $clave_usuario  = $_POST['clave'];
 }

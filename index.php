@@ -28,7 +28,7 @@
                                         <input type="password" class="login__input" name="clave" id="clave" placeholder=" " required>
                                         <label for="clave" class="login__label">Contraseña</label>
                                 </div>
-                                        <input type="submit" id="boton_ingreso" name="boton_ingreso" value="Ingresar" class="login__boton">
+                                        <input type="submit" id="boton_ingreso" name="boton_login" value="Ingresar" class="login__boton">
                                 <p class="login__parrafo">
                                         <a href="#" class="login__enlace">¿Olvidó su contraseña?</a>
                                         <a href="#" class="login__enlace">Sobre nosotros</a>

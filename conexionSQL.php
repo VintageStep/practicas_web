@@ -1,14 +1,15 @@
 <?php
 function Conectar(){
 $serverName = "192.168.34.28\\sqlexpress, 1433"; 
-$connectionInfo = array( "Database"=>"Practicas", "UID"=>"Practica", "PWD"=>"1234");
-try{
-        $conn = sqlsrv_connect( $serverName, $connectionInfo);
-     }
 
-catch(Exception $e){
-    echo "Ocurrió algo con la base de datos: " . $e->getMessage();
-    exit;
+$connectionInfo = array( "Database"=>"Practicas", "UID"=>"Practica", "PWD"=>"1234","TrustServerCertificate"=>True);
+
+$conn = sqlsrv_connect( $serverName, $connectionInfo);
+if( $conn ) {
+    echo "Connection established.<br />";
+}else{
+    echo "Connection could not be established.<br />";
+    die( print_r( sqlsrv_errors(), true));
 }
 return $conn;  
 }
