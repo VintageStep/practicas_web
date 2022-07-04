@@ -4,8 +4,11 @@ session_start();
 
 // Verificar si se llega a este script desde el formulario login
 if(isset($_POST['boton_login'])){
-    $nombre_usuario = $_POST['usuario']; // Es un mail
+    // Recoger losdatos del formulario
+    $nombre_usuario = $_POST['usuario']; 
     $clave_usuario  = $_POST['clave'];
+
+    //Comprobaciones pendientes.
 }
 
 // CONECTAR BBDD
