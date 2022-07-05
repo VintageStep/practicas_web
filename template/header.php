@@ -1,5 +1,5 @@
 <?php
-include '..\conexionSQL.php';
+include_once '../../logica_de_negocio/conexion.func.php';
 ?>
 <!doctype html>
 <html lang="es">

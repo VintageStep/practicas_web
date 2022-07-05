@@ -17,7 +17,7 @@
 </head>
 <body>
         <main class="login__main container">
-                <form name="formulario" method="POST" action="/inicio_sesion_practica_Modificada.php" class="login">
+                <form name="formulario" method="POST" action="/controladores/login.control.php" class="login">
                         <h1 class="login__titulo">Inicio de sesión</h1>
                         <div class="login__contenedor">
                                 <div class="login__grupo">
@@ -32,8 +32,18 @@
                                 <p class="login__parrafo">
                                         <a href="#" class="login__enlace">¿Olvidó su contraseña?</a>
                                         <a href="#" class="login__enlace">Sobre nosotros</a>
-                                </p>        
-                                <p class="login__error"><?php $mensaje ?></p>
+                                </p> 
+                                <!-- si vienen errores los devuelve -->       
+                                <?php
+                                if(isset($_GET["error"])){
+                                if($_GET["error"] == "emptyinput"){
+                                        echo "<p>Filling all fields is required.</p>";
+                                }
+                                else if($_GET["error"] == "wronglogin"){
+                                        echo "<p>Incorrect login information.</p>";
+                                }
+                                }
+                                ?>
                         </div>
                 </form>        
         </main>
