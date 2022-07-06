@@ -18,7 +18,8 @@
 <body>
         <main class="login__main container">
                 <form name="formulario" method="POST" action="/controladores/login.control.php" class="login">
-                        <h1 class="login__titulo">Inicio de sesión</h1>
+                        <img src="\imagenes\logo.png" alt="Logo de la pagina" class="login__logo">
+                        <!-- <h1 class="login__titulo">Inicio de sesión</h1> -->
                         <div class="login__contenedor">
                                 <div class="login__grupo">
                                         <input type="text" name="usuario" class="login__input" id="usuario" placeholder=" " required>
@@ -36,11 +37,11 @@
                                 <!-- si vienen errores los devuelve -->       
                                 <?php
                                 if(isset($_GET["error"])){
-                                if($_GET["error"] == "emptyinput"){
-                                        echo "<p>Filling all fields is required.</p>";
+                                if($_GET["error"] == "inputvacio"){
+                                        echo "<p class='login__error'>Es necesario llenar todos los campos.</p>";
                                 }
-                                else if($_GET["error"] == "wronglogin"){
-                                        echo "<p>Incorrect login information.</p>";
+                                else if($_GET["error"] == "errorlogin"){
+                                        echo '<p class="login__error">El usuario y/o la contraseña introducidas son incorrectas.</p>';
                                 }
                                 }
                                 ?>

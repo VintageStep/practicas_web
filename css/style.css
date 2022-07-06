@@ -14,6 +14,7 @@
     --black-chocolate: #211103ff;
     --black: #000000ff;
     --dropdown-border-color: rgba(0,0,0,0.175);
+    --flickr-pink: #f72585ff;
     /* https://webgradients.com/ */
     --bk-gradient: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     --bk-wgradient: linear-gradient(90deg, #fdfbfb 0%, #ebedee 100%);
@@ -54,6 +55,12 @@ FORMULARIO LOGIN
     font-size: 2rem;
     margin-bottom: .5em;
     color: var(--black-chocolate);
+}
+
+.login__logo{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
 }
 
 .login__contenedor {
@@ -113,11 +120,11 @@ FORMULARIO LOGIN
 }
 /* Pediente hacer display cuando se genere un error*/
 .login__error{
-    display: none;
+    color: var(--flickr-pink);
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------- 
-BARRA DE NAVEGACION
+BARRA DE NAVEGACION Y BOTON LOGOUT
 -----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Contenedor del header */
@@ -213,11 +220,30 @@ BARRA DE NAVEGACION
     display: block;
 }
 
+/* Estilos del botón de logout y su contenedor*/
+
+.logout__boton {
+    text-decoration: none;
+    background-color: var(--middle-blue-purple);
+    color: var(--seashell);
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    line-height: 1.2;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+.logout__contenedor{
+    grid-area: aside;
+}
+
 /*----------------------------------------------------------------------------------------------------------------------------------------------- 
 FORMULARIOS
 -----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/* .body{
+.body{
 
     min-height: 100vh;    
     display: grid;
@@ -242,4 +268,4 @@ FORMULARIOS
 .navbar {
     grid-area: head;
     margin: auto auto auto .5%;
-} */
+}

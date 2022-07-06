@@ -1,5 +1,6 @@
 <?php
-include_once '../../logica_de_negocio/conexion.func.php';
+include '../logica_de_negocio/conexion.func.php';
+include '../logica_de_negocio/validacion.func.php';
 ?>
 <!doctype html>
 <html lang="es">
@@ -33,7 +34,7 @@ include_once '../../logica_de_negocio/conexion.func.php';
                     </ul>
                 </li>
                 <li class="navbar__list"><a class="navbar__link" href="../calendar/Calendario.php">Calendario</a></li>
-                <?php cerrar_sesion() ?>
             </ul>
         </nav>
     </header>
+    <?php cerrar_sesion() ?>
