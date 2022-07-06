@@ -1,6 +1,7 @@
 <?php
 include '../logica_de_negocio/conexion.func.php';
 include '../logica_de_negocio/validacion.func.php';
+session_start();
 ?>
 <!doctype html>
 <html lang="es">
